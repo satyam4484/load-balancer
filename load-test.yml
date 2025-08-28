@@ -1,0 +1,10 @@
+config:
+  target: "http://localhost:3001"
+  phases:
+    - duration: 10
+      arrivalRate:  50  # 20 requests per second
+scenarios:
+  - flow:
+      - get:
+          url: "/heavy"
+# artillery run load-test.yml  --record --key a9_r6kyigt3mliyu1tjve83wv7dro2e2grs

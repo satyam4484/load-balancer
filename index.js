@@ -1,12 +1,12 @@
 const express = require("express");
 const app = express();
-const PORT = 3000;
+const PORT = 3001;
 
 app.get("/", (req, res) => {
-    res.send("Hello from Node.js running on EC2 🚀");
+    res.send("Hello from Node.js running on EC2 ");
 });
 
-app.get("/heavy", (req, res) => {
+app.get("/heavy", (req, res) => {``
     let sum = 0;
     for (let i = 0; i < 1e8; i++) {
         sum += i;
